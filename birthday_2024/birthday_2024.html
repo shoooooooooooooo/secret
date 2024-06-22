@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>誕生日おめでとう</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* 横スクロールを防ぐ */
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+            color: #69eeff;
+            text-shadow: 2px 2px #ff69b4; /* テキストに影を追加 */
+        }
+        .scrolling-images-wrapper {
+            overflow: hidden;
+            width: 80%;
+            margin: 20px auto;
+            position: relative;
+            border: 5px solid #ff69b4; /* 枠を追加 */
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* ボックスシャドウを追加 */
+        }
+        .scrolling-images {
+            display: flex;
+            animation: scroll 30s linear infinite;
+        }
+        .scrolling-images img {
+            width: 600px; /* 画像を大きくする */
+            height: 400px; /* 画像を大きくする */
+            margin: 0 10px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s; /* ホバー時の変化にトランジションを追加 */
+        }
+        .scrolling-images img:hover {
+            transform: scale(1.1); /* ホバー時に画像を拡大 */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* ホバー時に影を追加 */
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .video-container {
+            margin-top: 40px;
+        }
+        .video-container h2 {
+            font-size: 2em;
+            color: #4682b4;
+            text-shadow: 1px 1px #333; /* テキストに影を追加 */
+        }
+        video {
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* ボックスシャドウを追加 */
+        }
+    </style>
+</head>
+<body>
+    <h1>琴音へ　誕生日おめでとう！！！</h1>
+    <div class="scrolling-images-wrapper">
+        <div class="scrolling-images">
+            <img src="IMG_3401.JPG" alt="Image 1">
+            <img src="IMG_2332.jpg" alt="Image 2">
+            <img src="IMG_2835.JPG" alt="Image 3">
+            <img src="IMG_4444.JPG" alt="Image 4">
+            <img src="IMG_4629.jpg" alt="Image 5">
+            <img src="IMG_4842.JPG" alt="Image 6">
+            <img src="IMG_4960.JPG" alt="Image 7">
+            <img src="IMG_5450.jpg" alt="Image 8">
+            <img src="IMG_6685.JPG" alt="Image 9">
+            <img src="IMG_8012.JPG" alt="Image 10">
+            <img src="IMG_8117.jpg" alt="Image 11">
+            <img src="IMG_8582.JPG" alt="Image 12">
+            <!-- ループするために同じ画像を再度追加 -->
+            <img src="IMG_3401.JPG" alt="Image 1">
+            <img src="IMG_2332.jpg" alt="Image 2">
+            <img src="IMG_2835.JPG" alt="Image 3">
+            <img src="IMG_4444.JPG" alt="Image 4">
+            <img src="IMG_4629.jpg" alt="Image 5">
+            <img src="IMG_4842.JPG" alt="Image 6">
+            <img src="IMG_4960.JPG" alt="Image 7">
+            <img src="IMG_5450.jpg" alt="Image 8">
+            <img src="IMG_6685.JPG" alt="Image 9">
+            <img src="IMG_8012.JPG" alt="Image 10">
+            <img src="IMG_8117.jpg" alt="Image 11">
+            <img src="IMG_8582.JPG" alt="Image 12">
+        </div>
+    </div>
+    <div class="video-container">
+        <h2>動画</h2>
+        <video controls>
+            <source src="path_to_your_video.mp4" type="video/mp4">
+            お使いのブラウザはビデオタグをサポートしていません。
+        </video>
+    </div>
+</body>
+</html>
