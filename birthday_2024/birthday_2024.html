@@ -59,7 +59,9 @@
             text-shadow: 1px 1px #333; /* テキストに影を追加 */
         }
         video {
-            width: 80%;
+            width: 50%; /* ビデオの幅を小さくする */
+            max-width: 300px; /* 最大幅を設定 */
+            height: auto; /* 高さは自動調整 */
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* ボックスシャドウを追加 */
         }
@@ -99,7 +101,7 @@
     <div class="video-container">
         <h2>動画</h2>
         <video controls>
-            <source src="path_to_your_video.mp4" type="video/mp4">
+            <source src="IMG_6490 (1).mp4" type="video/mp4">
             お使いのブラウザはビデオタグをサポートしていません。
         </video>
     </div>
