@@ -22,7 +22,7 @@
         }
         .scrolling-images-wrapper {
             overflow: hidden;
-            width: 80%;
+            width: 95%; /* 幅を広げる */
             margin: 20px auto;
             position: relative;
             border: 5px solid #ff69b4; /* 枠を追加 */
@@ -31,14 +31,15 @@
         }
         .scrolling-images {
             display: flex;
-            animation: scroll 30s linear infinite;
+            width: calc(610px * 24); /* 画像12枚×2セットの幅を指定 */
+            animation: scroll 60s linear infinite;
         }
         .scrolling-images img {
-            width: 600px; /* 画像を大きくする */
-            height: 400px; /* 画像を大きくする */
-            margin: 0 10px;
+            width: 500px; /* 画像を小さくする */
+            height: 600px; /* アスペクト比を維持 */
+            margin: 0 2px; /* 画像間のスペースを減らす */
             border-radius: 10px;
-            object-fit: cover;
+            object-fit: contain; /* 画像のアスペクト比を維持して中央揃え */
             transition: transform 0.3s; /* ホバー時の変化にトランジションを追加 */
         }
         .scrolling-images img:hover {
